@@ -1,0 +1,28 @@
+DROP TABLE IF EXISTS media_cost_cpa;
+DROP TABLE IF EXISTS ir_media_cost_cpa;
+
+CREATE TABLE media_cost_cpa (
+	id SERIAL PRIMARY KEY,
+	record_id VARCHAR(255) NOT NULL,
+	action_id VARCHAR(255) DEFAULT NULL,
+	oid VARCHAR(255) NOT NULL,
+	ad_id VARCHAR(255) DEFAULT NULL,
+	publisher_id VARCHAR(255) DEFAULT NULL,
+	publisher_name VARCHAR(255) DEFAULT NULL,
+	commission DECIMAL(12,2) NOT NULL,
+	client_cost DECIMAL(12,2) DEFAULT NULL,
+	sale_amount DECIMAL(12,2) DEFAULT NULL
+);
+
+CREATE TABLE ir_media_cost_cpa (
+	id SERIAL PRIMARY KEY,
+	record_id VARCHAR(255) NOT NULL,
+	action_id VARCHAR(255) DEFAULT NULL,
+	oid VARCHAR(255) NOT NULL,
+	ad_id VARCHAR(255) DEFAULT NULL,
+	publisher_id VARCHAR(255) DEFAULT NULL,
+	publisher_name VARCHAR(255) DEFAULT NULL,
+	commission DECIMAL(12,2) NOT NULL,
+	client_cost DECIMAL(12,2) DEFAULT NULL,
+	sale_amount DECIMAL(12,2) DEFAULT NULL
+);

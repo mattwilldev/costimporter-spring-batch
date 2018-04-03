@@ -1,0 +1,12 @@
+spring:
+  application.name: costimporter-spring-batch
+  datasource:
+    driverClassName: org.postgresql.Driver
+    url: jdbc:postgresql://localhost:5432/cis
+    username: postgres
+    password: password
+  jpa:
+    hibernate:
+      ddl-auto: none
+flyway:
+    baselineOnMigrate: true
